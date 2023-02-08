@@ -1,0 +1,24 @@
+p{
+    color: blue;
+
+}
+h1{
+    color: red;
+}
+.azul{
+    color: rgb(65, 104, 163);
+}
+
+
+.padre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 175, 231);
+}
+.cuerpo{
+   width: 80%;
+   text-align: center;
+
+}

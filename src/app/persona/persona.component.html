@@ -1,0 +1,35 @@
+<div class="padre">
+  <div class="cuerpo">
+    <p> componente persona están funcionando</p>
+  
+  
+    <div class="alert alert-success" role="alert">
+      BOOTSTRAP SE ESTÁ EJECUTANDO
+    </div>
+    
+    <!-- aqui se trae el valor de una variable desde los componentes .ts -->
+    <h1> Nombre: {{nombre}} </h1>
+    <h1> Apellido: {{apellido}} </h1>
+  
+  
+  
+  
+  
+  </div>
+</div>
+
+
+
+<hr>
+<h1 class="azul">property binding en angular</h1>
+
+<!-- es como anclar un atributo del boton con una variable de los componentes -->
+<button type="button" class="btn btn-primary" [disabled]="deshabilitarBoton"> este boton va a desabilitarse </button>
+<hr>
+<h1>agregar un input para aplicar concepto de two way binding </h1>
+<p>este concepto nos permite enlazar y hacer cambios en los componentes del .ts desde el html y vicebersa</p>
+<!-- ngModel es un evento que nos permite recoger lo escrito en el input y modificar el valor de una variable en los componentes desde el html y vicebersa -->
+<input type="text" class="form-control" [(ngModel)]="textoAmodificar">
+
+<!-- aqui se trae el valor de una variable desde los componentes .ts -->
+<h3>{{textoAmodificar}}</h3>
