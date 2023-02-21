@@ -1,0 +1,94 @@
+h1{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 0 0 5px #c4eb17,
+    0 0 25px #c4eb17, 
+    0 0 50px #c4eb17,
+    0 0 100px #c4eb17;
+}
+h4{
+    font-size: 2em;
+  
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 5px #00ff00,
+    0 0 25px #00ff00, 
+    0 0 50px #00ff00,
+    0 0 100px #00ff00;
+    letter-spacing: 3px;
+    /* cursor: pointer; ayuda a cambiar el cursor por una mano */
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.cuerpo{
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../assets/imagenes/fondo4.jpg);  */
+     background-color: rgb(10, 10, 10); 
+    height: 100vh;
+}
+.padre{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hijo{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+    width: 100%;
+}
+.imagenes{
+    margin: 5% 0;
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    /* importante para dar profundidad a las fotos */
+    filter: drop-shadow(5px 5px 20px #2EADBC);
+    animation: imagenesPortada 2.5s infinite;
+}
+img:hover{
+    filter: drop-shadow(5px 5px 20px #b0d315);
+}
+
+@keyframes imagenesPortada {
+/* deg significa grados */
+
+/* transform-origin: top center; es para que la imagen rote desde arriba y al centro si no se pone rota desde el centro de la imagen en x y y */
+ 
+    /* 0%{
+       
+        transform: rotate(-15deg) ;transform-origin: top center;
+    }
+    25%{
+        transform: rotate(0deg);transform-origin: top center;
+    }
+    50%{
+        transform: rotate(15deg);transform-origin: top center;
+    }
+    75%{
+        transform: rotate(0deg);transform-origin: top center;
+    }
+    100%{
+        transform: rotate(-15deg);transform-origin: top center;
+    } */
+    
+0%{
+    transform: rotate(-15deg) ;
+}
+50%{
+    transform: rotate(15deg) ;
+}
+100%{
+    transform: rotate(-15deg) ;
+}
+}
