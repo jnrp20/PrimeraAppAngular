@@ -2,20 +2,51 @@ h1{
     color: white;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 3px;
-    text-shadow: 0 0 5px #c4eb17,
-    0 0 25px #c4eb17, 
-    0 0 50px #c4eb17,
-    0 0 100px #c4eb17;
+    text-shadow: 0 0 5px #2EADBC,
+    0 0 25px #2EADBC, 
+    0 0 50px #2EADBC,
+    0 0 100px #2EADBC;
 }
+h1:hover{
+
+  
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 5px #ef72ff,
+    0 0 25px #ef72ff, 
+    0 0 50px #ef72ff,
+    0 0 100px #ef72ff;
+    letter-spacing: 3px;
+    /* cursor: pointer; ayuda a cambiar el cursor por una mano */
+    text-transform: uppercase;
+    transition:  0.5s;
+    
+
+
+}h4:hover{
+    font-size: 2em;
+  
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 5px #ef72ff,
+    0 0 25px #ef72ff, 
+    0 0 50px #ef72ff,
+    0 0 100px #ef72ff;
+    letter-spacing: 3px;
+    /* cursor: pointer; ayuda a cambiar el cursor por una mano */
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
 h4{
     font-size: 2em;
   
     font-weight: 500;
     color: #fff;
-    text-shadow: 0 0 5px #00ff00,
-    0 0 25px #00ff00, 
-    0 0 50px #00ff00,
-    0 0 100px #00ff00;
+    text-shadow: 0 0 5px #2EADBC,
+    0 0 25px #2EADBC, 
+    0 0 50px #2EADBC,
+    0 0 100px #2EADBC;
     letter-spacing: 3px;
     /* cursor: pointer; ayuda a cambiar el cursor por una mano */
     text-transform: uppercase;
@@ -52,12 +83,18 @@ h4{
     align-items: center;
 }
 img{
+    transition: 2s;
     /* importante para dar profundidad a las fotos */
     filter: drop-shadow(5px 5px 20px #2EADBC);
     animation: imagenesPortada 2.5s infinite;
+    
 }
 img:hover{
+    transition: 2s;
+    width: 300px; height: 300px;
     filter: drop-shadow(5px 5px 20px #b0d315);
+    animation: imagenesquietas 2.5s infinite;
+    
 }
 
 @keyframes imagenesPortada {
@@ -91,4 +128,13 @@ img:hover{
 100%{
     transform: rotate(-15deg) ;
 }
+}
+
+@keyframes imagenesquietas {
+    
+
+    100%{
+        transform: rotate(0deg) ;
+    }
+    
 }
